@@ -1,3 +1,4 @@
+![osbackgroundhigh](https://github.com/user-attachments/assets/4cbaa132-1bb7-46c9-9798-da53875af18e)
 MACHIAVELLIAN-OS DEBIAN/GNU LINUX
 (VERSION 1.0)
 A Custom-Built Debian OS with Cybersecurity Tools and Services
@@ -12,6 +13,8 @@ The OS also includes custom software I’ve developed:
 - PortScanner: A custom-built, traditional port scanner that scans for open ports and retrieves banner data.
 
 For optimal performance, the system uses the lightweight LXQt desktop environment and features a custom bootloader screen.
+![Screenshot 2025-01-16 113144](https://github.com/user-attachments/assets/e60e5f5e-c890-439d-a7d8-a4d69ef5d610)
+
 ____________________________________________________________________________
 This custom security Debian-Linux distribution comes pre-installed with these tools and applications...
 
@@ -35,12 +38,16 @@ GUI Applications:
 - Zaproxy - Website security scanner.
 - clamTK - Scans corrupted files and detects viruses. GUI for ClamAV.
 
+![Screenshot 2025-01-16 113422f](https://github.com/user-attachments/assets/f608fe54-db91-4c40-998c-8dd8cddd897e)
+
 Privacy Browsers
 - Mozilla Firefox
 - Brave Browser
 - Chromium
 - Tor Browser
 	- An active Tor service is running to enhance privacy and anonymity.
+ 
+![Screenshot 2025-01-15 143736ffff](https://github.com/user-attachments/assets/09368c2e-31a9-40a9-8561-bfcd7b41dfd0)
 
 My own custom software:
 - STLreader - Reads STL files and allows you to view them in a 3D environment.
