@@ -1,0 +1,127 @@
+These are some useful command-line terminal commands
+
+File and Directory Management:
+    pwd: Print the current working directory.
+    ls: List files and directories.
+        ls -l: List with detailed information (permissions, size, owner, etc.).
+        ls -a: List all files, including hidden files.
+    cd <dir>: Change directory to <dir>.
+    mkdir <dir>: Create a new directory.
+    rmdir <dir>: Remove an empty directory.
+    rm <file>: Remove a file.
+        rm -r <dir>: Remove a directory and its contents recursively.
+        rm -f <file>: Force remove a file (ignore non-existent files).
+    cp <source> <destination>: Copy a file or directory.
+        cp -r <source> <destination>: Recursively copy a directory.
+    mv <source> <destination>: Move or rename a file or directory.
+    touch <file>: Create an empty file or update the timestamp of an existing file.
+
+File Viewing and Editing:
+    cat <file>: Concatenate and display file content.
+    less <file>: View file content interactively (scrollable).
+    more <file>: Similar to less, but with less control.
+    head <file>: View the first 10 lines of a file.
+    tail <file>: View the last 10 lines of a file.
+        tail -f <file>: Follow the file in real-time (e.g., for logs).
+    nano <file>: Open a file in the nano text editor.
+    vim <file>: Open a file in the Vim text editor.
+
+File Search:
+    find <dir> -name <filename>: Find a file by name in a directory.
+    grep <pattern> <file>: Search for a pattern in a file.
+        grep -r <pattern> <dir>: Recursively search for a pattern in a directory.
+    locate <filename>: Locate files in the system (faster than find but needs an updated database).
+
+File Permissions:
+    chmod <permissions> <file>: Change file permissions (e.g., chmod 755 <file>).
+    chown <owner>:<group> <file>: Change file ownership.
+    chgrp <group> <file>: Change file group ownership.
+
+System Information:
+    uname -a: Display system information (kernel version, OS, architecture).
+    top: Show real-time system processes and resource usage.
+    htop: Interactive process viewer (more user-friendly than top).
+    df: Show disk space usage.
+        df -h: Human-readable disk space usage.
+    du <dir>: Show disk usage of a directory.
+        du -sh <dir>: Display total disk usage of a directory in human-readable format.
+    free: Display memory usage.
+        free -h: Human-readable memory usage.
+    uptime: Display system uptime and load averages.
+    whoami: Show the current logged-in user.
+
+Process Management:
+    ps: Show current processes.
+        ps aux: Show detailed information for all processes.
+    kill <pid>: Terminate a process by PID.
+    killall <process_name>: Kill all processes with the given name.
+    top: Monitor system processes in real-time.
+    nice <command>: Run a command with modified scheduling priority.
+    nohup <command>: Run a command immune to hangups (detached from terminal).
+
+Networking:
+    ping <hostname>: Ping a network host to check connectivity.
+    ifconfig: Display network interfaces (use ip a in newer Linux versions).
+    ip a: Display IP addresses and network interfaces.
+    netstat: Display network connections and routing tables.
+        netstat -tuln: Show listening ports and services.
+    curl <url>: Fetch content from a URL (useful for APIs).
+    wget <url>: Download content from a URL.
+    scp <file> <user>@<host>:<path>: Securely copy a file to a remote server.
+    ssh <user>@<host>: Securely connect to a remote machine via SSH.
+
+Disk Management:
+    fdisk -l: List disk partitions.
+    mount <device> <dir>: Mount a device to a directory.
+    umount <device>: Unmount a device.
+    lsblk: List information about block devices.
+
+Package Management:
+    apt update: Update package lists.
+    apt upgrade: Upgrade installed packages.
+    apt install <package>: Install a package.
+    apt remove <package>: Remove a package.
+
+Archive and Compression:
+    tar -czvf <archive.tar.gz> <files>: Compress files into a .tar.gz archive.
+    tar -xzvf <archive.tar.gz>: Extract a .tar.gz archive.
+    zip <archive.zip> <files>: Create a .zip archive.
+    unzip <archive.zip>: Extract a .zip archive.
+    gzip <file>: Compress a file using gzip.
+    gunzip <file.gz>: Decompress a file using gzip.
+
+System Maintenance:
+    sudo <command>: Execute a command with superuser privileges.
+    sudo reboot: Reboot the system.
+    sudo shutdown now: Shut down the system immediately.
+    sudo systemctl restart <service>: Restart a system service (e.g., systemctl restart apache2).
+
+Disk Usage Analysis:
+    ncdu: Disk usage analyzer with a text-based interface (install with sudo apt install ncdu).
+    tree: Display directories as a tree (install with sudo apt install tree).
+
+Others:
+    alias <name>='<command>': Create a shortcut for a command.
+    history: Show the command history.
+    clear: Clear the terminal screen.
+    exit: Exit the terminal session.
+    
+When creating a desktop entry file. This controls how an application look in application menus or launchers. This was used when creating custom application menus for command line tools and other software.
+1. sudo nano ~/.local/share/applications/<name>.desktop
+
+2. (When opening the .desktop directory, add the lines below in the nano editor, overwrite appropriately, save, exit, and it should appear in the applications menu.)
+	[Desktop Entry]
+	Version=1.0
+	Name=<name>
+	Comment=<comment>
+	Exec=<execution> 
+		to execute a command with the terminal 
+			(qterminal -e "bash -c 'neofetch; exec bash'")
+		to execute python file
+			(<python version> <path/to/script.py>)
+	Icon=path/to/icon.png
+	Terminal=<true or false>
+	Type=Application
+	Categories=<category> 
+		(Graphics, Utilities;Network;Security;, Accessories)
+	NoDisplay=false
