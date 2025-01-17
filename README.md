@@ -3,7 +3,8 @@ MACHIAVELLIAN-OS DEBIAN/GNU LINUX
 (VERSION 1.0)
 A Custom-Built Debian OS with Cybersecurity Tools and Services
 
-Overview:
+Overview
+
 Machiavellian Debian/GNU Linux OS is a custom-built version of the Debian Linux distribution, specifically tailored for cybersecurity professionals, ethical hackers, and privacy enthusiasts. This operating system comes pre-configured with a variety of powerful cybersecurity tools, network utilities, and custom software to aid in security testing, penetration testing, network analysis, and privacy protection.
 
 The system includes tools such as Nmap, Wireshark, Hydra, and many others, as well as pre-configured privacy browsers like Firefox, Brave, Chromium, and Tor. Additionally, the Tor service is actively running to enhance anonymity.
