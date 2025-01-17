@@ -14,6 +14,7 @@ The OS also includes custom software I’ve developed:
 - PortScanner: A custom-built, traditional port scanner that scans for open ports and retrieves banner data.
 
 For optimal performance, the system uses the lightweight LXQt desktop environment and features a custom bootloader screen.
+
 ![Screenshot 2025-01-16 113144](https://github.com/user-attachments/assets/e60e5f5e-c890-439d-a7d8-a4d69ef5d610)
 
 ____________________________________________________________________________
