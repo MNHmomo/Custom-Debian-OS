@@ -69,5 +69,5 @@ ____________________________________________________________________________
 License:
 This project is licensed under the MIT License.
 ____________________________________________________________________________
-Contact & Contributions:
-Feel free to contribute to the development of this project or reach out for support via mohamed.ben.206720@gmail.com
+Reach out for support via mohamed.ben.206720@gmail.com
+Developed by MNHmomo (https://github.com/MNHmomo/Custom-Debian-OS)
